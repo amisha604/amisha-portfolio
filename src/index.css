@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background:#080405;
-  --color-foreground:#f6eef0;
+  --color-background:#07040c;
+  --color-foreground:#f3eefa;
 
-  --color-card: #130a0c;
-  --color-primary:#e8283f;
+  --color-card: #130b20;
+  --color-primary:#a970ff;
   --color-primary-foreground:#ffffff;
 
-  --color-secondary:#24141a;
-  --color-secondary-foreground:#e8b45a;
+  --color-secondary:#1d1230;
+  --color-secondary-foreground:#c9a3ff;
 
-  --color-muted:#2a181d;
-  --color-muted-foreground:#a8959a;
+  --color-muted:#24173a;
+  --color-muted-foreground:#ab9fc2;
 
-  --color-border:#3a1f27;
+  --color-border:#2e2146;
 
   --radius: 0.75rem;
 
-  --color-highlight:#e8b45a;
-  --color-surface:#1c0e12;
+  --color-highlight:#f0b8ff;
+  --color-surface:#1a1029;
 }
 
 @layer base{
@@ -42,15 +42,27 @@
 
 @layer components {
   .glass {
-    background: color-mix(in srgb, var(--color-surface) 50%, transparent);
-    backdrop-filter: blur(16px);
-    border: 1px solid color-mix(in srgb, var(--color-border) 50% , transparent);
+    background: linear-gradient(135deg, rgba(255,255,255,.07), rgba(255,255,255,.02)), rgba(20, 11, 36, .42);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid rgba(214, 186, 255, .12);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 10px 40px -12px rgba(0,0,0,.55);
   }
 
   .glass-strong {
-    background: color-mix(in srgb, var(--color-surface) 80%, transparent);
-    backdrop-filter: blur(24px);
-    border: 1px solid color-mix(in srgb, var(--color-border) 80% , transparent);
+    background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02)), rgba(16, 9, 30, .7);
+    backdrop-filter: blur(26px) saturate(150%);
+    -webkit-backdrop-filter: blur(26px) saturate(150%);
+    border: 1px solid rgba(214, 186, 255, .14);
+  }
+
+  /* fixed purple spider-lily backdrop behind the whole site */
+  .site-bg{
+    background:
+      linear-gradient(180deg, rgba(7,4,12,.55) 0%, rgba(7,4,12,.35) 40%, rgba(7,4,12,.7) 100%),
+      url("/lily-bg.jpg") center 60% / cover no-repeat,
+      #07040c;
+    filter: saturate(115%);
   }
 
   .glass-text{
@@ -253,16 +265,11 @@
   }
   .lily-fade{
     background:
-      linear-gradient(90deg, var(--color-background) 0%, color-mix(in srgb, var(--color-background) 75%, transparent) 38%, transparent 70%),
-      linear-gradient(180deg, color-mix(in srgb, var(--color-background) 60%, transparent) 0%, transparent 30%, transparent 65%, var(--color-background) 100%);
-  }
-  @media (max-width: 1023px){
-    .lily-fade{
-      background: linear-gradient(180deg, color-mix(in srgb, var(--color-background) 55%, transparent) 0%, color-mix(in srgb, var(--color-background) 80%, transparent) 50%, var(--color-background) 100%);
-    }
+      radial-gradient(ellipse at 20% 45%, rgba(7,4,12,.55) 0%, transparent 60%),
+      linear-gradient(180deg, transparent 70%, rgba(7,4,12,.6) 100%);
   }
 
-  /* falling gold sparkles */
+  /* falling lilac sparkles */
   @keyframes sparkle-fall{
     0%{ transform: translateY(-10vh) rotate(0deg); opacity:0; }
     10%{ opacity:.9; }

@@ -12,6 +12,7 @@ import { Contact } from "./sections/Contact";
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
+      <div className="fixed inset-0 -z-10 site-bg" aria-hidden="true" />
       <Navbar />
       <main>
         <Hero />
