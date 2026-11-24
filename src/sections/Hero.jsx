@@ -27,10 +27,9 @@ export const Hero = () => {
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden">
       {/* background: spider lilies */}
-      <div className="absolute inset-0 lily-bg opacity-80" />
       <div className="absolute inset-0 lily-fade" />
 
-      {/* falling gold sparkles */}
+      {/* falling lilac sparkles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         {dots.map((d, i) => (
           <span
