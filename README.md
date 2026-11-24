@@ -1,6 +1,6 @@
 # Amisha Nagiya — Data Analyst Portfolio
 
-The personal portfolio of **Amisha Nagiya**, a Data Analyst in retail and e-commerce analytics. It uses a crimson **spider-lily** theme with gold accents and frosted-glass panels, and it's built with React 19, Vite and Tailwind CSS v4.
+The personal portfolio of **Amisha Nagiya**, a Data Analyst in retail and e-commerce analytics. It uses a purple **spider-lily** theme with frosted-glass panels and lavender accents, and it's built with React 19, Vite and Tailwind CSS v4.
 
 > Analytics professional with 2 years of experience in merchandising performance, pricing, profitability and inventory planning, working with HRX Sportswear across Myntra and Flipkart. Tools: Excel, SQL, Python, Power BI, Tableau and Looker Studio.
 
@@ -24,7 +24,7 @@ The personal portfolio of **Amisha Nagiya**, a Data Analyst in retail and e-comm
 
 ## Highlights
 
-- 🌺 **Spider-lily theme.** Crimson-on-black lilies sit behind the hero and the contact section, with falling gold sparkles and frosted-glass cards.
+- 💜 **Purple spider-lily glass theme.** Purple lilies sit fixed behind the whole site, with frosted-glass cards, lavender accents and falling lilac sparkles.
 - 📊 **Impact numbers up front.** 60% fewer stockouts, 30% revenue growth, 90% less manual reporting, and ₹3–5L recovered per claim cycle.
 - 📂 **Project case studies.** Every project card opens a full popup with the problem, the data, step-by-step method, key numbers, findings, use cases and learnings. These are written from her GitHub repos and reports.
 - 📞 **Contact that works everywhere.** The Contact Me menu offers Email (opens Gmail), WhatsApp, and a Call panel with Call, Copy number and WhatsApp buttons.
@@ -68,7 +68,7 @@ The personal portfolio of **Amisha Nagiya**, a Data Analyst in retail and e-comm
 ```
 public/
   amisha.jpg                  profile photo
-  lily-bg.jpg                 spider-lily background
+  lily-bg.jpg                 purple spider-lily background
   Amisha_Nagiya_Resume.pdf    CV served by "Download CV"
   amazon-dashboard.png        Tableau dashboard (Amazon project)
   favicon.svg
@@ -134,8 +134,8 @@ Everything is in **`src/portfolio.config.js`**, so you never need to touch the c
 
 ## Theme & styling
 
-- **Colours** are Tailwind v4 tokens at the top of `src/index.css`: crimson `--color-primary: #e8283f`, gold `--color-highlight: #e8b45a`, and a near-black background.
-- **The lily background** comes from the `.lily-bg` and `.lily-fade` classes. To change it, replace `public/lily-bg.jpg`.
+- **Colours** are Tailwind v4 tokens at the top of `src/index.css`: lavender `--color-primary: #a970ff`, lilac `--color-highlight: #f0b8ff`, and a deep purple-black background.
+- **The lily background** is the fixed `.site-bg` layer, which uses `public/lily-bg.jpg`. To change it, replace that image.
 - **Glass panels** come from the `.glass` and `.glass-strong` utilities.
 - **Animations** (falling sparkles, fade-ins, marquee) are in `index.css`.
 
